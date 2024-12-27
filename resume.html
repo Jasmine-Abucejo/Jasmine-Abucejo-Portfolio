@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resume.css" />
+    <title>Jasmine-Abucejo-CV</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div>
+      <img
+        src="AbucejoJasmine-CV.jpg"
+        alt="AbucejoJasmine-CV"
+        class="resume-pic"
+      />
+      <a href="AbucejoJasmine-CV.pdf" download>Download Resume</a>
+    </div>
+  </body>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading navbar:", error));
+  </script>
+</html>

@@ -7,23 +7,18 @@
     <title>Jasmine-Abucejo</title>
   </head>
   <body>
-    <nav>
-      <a href="#" data-page="home">Home</a>
-      <a href="#" data-page="about">About</a>
-      <a href="#" data-page="contact">Contact</a>
-      <a href="#" data-page="projects">Projects</a>
-      <a href="resume.html" data-page="resume">Resume</a>
-    </nav>
+    <div id="navbar"></div>
     <div class="content">
       <img src="profile_pic.JPG" alt="" />
       <h2>Hi! I am Jasmine Abucejo</h2>
-      <p>
-        I am a developer who wants to use and further improve my skills and
-        knowledge acquired in school and gain valuable experiences that will
-        hone me into a much better agent of technology. I love web development
-        the most but is very much willing to learn new things as well.
-      </p>
     </div>
   </body>
-  <script src="index.js"></script>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading navbar:", error));
+  </script>
 </html>

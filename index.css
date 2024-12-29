@@ -8,7 +8,8 @@ img {
   height: 50vh;
   border-radius: 50%;
   border-right: solid black 2px;
-  border-bottom: solid black 2px;
+  border-top: solid black 2px;
+  border-left: solid black 2px;
   padding: 10px;
 }
 
@@ -18,7 +19,7 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0px;
   /* height: 60vh;
   width: 60vw; */
   /* border-right: solid black 2px;
@@ -30,4 +31,38 @@ img {
   width: 40%;
   text-align: justify;
   text-justify: auto;
+}
+
+.header {
+  min-height: 70px;
+  width: 100vw;
+  background-color: rgb(91, 109, 166);
+  margin-top: -10px;
+
+  /* padding: 10px; */
+}
+
+#navbar {
+  /* margin-top: -20px; */
+  z-index: 2;
+  background-color: white;
+  width: 100vw;
+}
+
+.img-container {
+  background-color: white;
+  min-width: 60vw;
+  padding: 20px;
+  margin-top: 20px;
+  min-height: 55vh;
+}
+
+.img-container div {
+  display: flex;
+  flex-direction: row;
+  gap: 30rem;
+  background-color: rgb(91, 109, 166);
+  z-index: -1;
+  padding-left: 20px;
+  margin-top: -200px;
 }

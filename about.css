@@ -1,8 +1,11 @@
+body {
+  background-color: #9cd9f0;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .container {
@@ -19,17 +22,34 @@
   margin-top: 30px;
   margin-left: 50px;
   z-index: 0;
-  background-color: violet;
+  background-color: rgb(91, 109, 166);
 }
 .container-2 {
   margin-top: -50px;
   margin-left: 10rem;
   z-index: 1;
-  background-color: lightpink;
+  background-color: white;
 }
 .container-3 {
   margin-top: -350px;
   margin-left: 40rem;
   z-index: 2;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
+}
+.header {
+  min-height: 70px;
+  width: 100vw;
+  background-color: rgb(91, 109, 166);
+  margin-top: -20px;
+  text-align: center;
+  margin-left: -10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 0px;
 }

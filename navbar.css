@@ -8,6 +8,11 @@
   color: rgb(91, 109, 166);
 }
 
+.navpanel {
+  z-index: 2;
+  background-color: white;
+  width: 100vw;
+}
 /* .home {
   background-color: darksalmon;
 }

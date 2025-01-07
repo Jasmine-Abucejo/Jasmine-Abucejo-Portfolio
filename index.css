@@ -2,7 +2,7 @@ body {
   background-color: #9cd9f0;
 }
 
-img {
+.profile-pic {
   object-fit: cover;
   width: 20vw;
   height: 50vh;
@@ -20,17 +20,6 @@ img {
   justify-content: center;
   text-align: center;
   margin-top: 0px;
-  /* height: 60vh;
-  width: 60vw; */
-  /* border-right: solid black 2px;
-  border-bottom: solid black 2px;
-  /* padding: 10px; */
-}
-
-.content p {
-  width: 40%;
-  text-align: justify;
-  text-justify: auto;
 }
 
 .header {
@@ -38,16 +27,13 @@ img {
   width: 100vw;
   background-color: rgb(91, 109, 166);
   margin-top: -10px;
-
-  /* padding: 10px; */
 }
 
-/* #navbar {
- 
+#navbar {
   z-index: 2;
   background-color: white;
   width: 100vw;
-} */
+}
 
 .img-container {
   background-color: white;
@@ -65,4 +51,53 @@ img {
   z-index: -1;
   padding-left: 20px;
   margin-top: -200px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  border: solid black 2px;
+  border-top-left-radius: 20px;
+
+  width: 30vw;
+  height: 30vh;
+  padding: 10px;
+}
+.container-1 {
+  margin-top: 30px;
+  margin-left: 50px;
+  z-index: 0;
+  background-color: rgb(91, 109, 166);
+}
+.container-2 {
+  margin-top: -50px;
+  margin-left: 10rem;
+  z-index: 1;
+  background-color: white;
+}
+.container-3 {
+  margin-top: -350px;
+  margin-left: 40rem;
+  z-index: 2;
+  background-color: white;
+}
+.display-pic {
+  margin-top: -50px;
+  margin-left: 50rem;
+  object-fit: cover;
+  width: 20vw;
+  height: 30vh;
+  z-index: 2;
+  border: solid black 2px;
+  border-top-left-radius: 20px;
+}
+.resume-pic {
+  object-fit: cover;
+  width: 60vw;
+  border: solid black 2px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }

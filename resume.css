@@ -24,3 +24,8 @@ img {
   text-align: center;
   margin-left: -10px;
 }
+#navbar {
+  z-index: 2;
+  background-color: white;
+  width: 100vw;
+}

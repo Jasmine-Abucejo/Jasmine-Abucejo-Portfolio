@@ -101,3 +101,33 @@ body {
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  /* padding: 20px; */
+  border: solid black 2px;
+  border-radius: 20px;
+  width: 70vw;
+  height: 80vh;
+}
+.project-container h2 {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.project-container img {
+  object-fit: cover;
+  width: 50vw;
+  height: 50vh;
+  border: solid black 2px;
+  border-radius: 10px;
+}

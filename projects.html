@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="header"><h2>Projects</h2></div>
+      <div id="navbar"></div>
+      <div class="projects">
+        <div class="project-container">
+          <h2>PHP-based Book Borrowing System</h2>
+          <img src="BBS.png" alt="" />
+          <p>
+            <a
+              href="https://drive.google.com/file/d/1nVVYF21-ATRNzDOk1bAmVMxEv0u8aKyQ/view?fbclid=IwZXh0bgNhZW0CMTEAAR0tEvuRO_sx3LmyAZjrnK12hi7fU3KhIa66EWAD9ZqDaqov17XYCz7POqI_aem_U03d2wuFcPglSBC7TEviog"
+              >Watch Video Demo</a
+            >
+          </p>
+          <a href="https://github.com/Jasmine-Abucejo/librarian-system"
+            >GitHub Repo Link</a
+          >
+        </div>
+        <div class="project-container">
+          <h2>ReactJS-based Book Borrowing System</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    fetch("navbar.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("navbar").innerHTML = data;
+      })
+      .catch((error) => console.error("Error loading navbar:", error));
+  </script>
+</html>
